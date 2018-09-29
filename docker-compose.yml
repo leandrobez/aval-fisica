@@ -13,10 +13,10 @@ services:
     ports:
       - 8080:8080
 
-  poll:
+  build:
     image: ambientum/node:9
-    container_name: aval-fisica-vue-poll
-    command: npm run poll
+    container_name: aval-fisica-vue-build
+    command: npm run build
     volumes:
       - .:/var/www/app
     ports:

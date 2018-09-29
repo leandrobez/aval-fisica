@@ -8,6 +8,13 @@ module.exports = {
 		filename: 'bundle.js',
 		publicPath: '/dist/js/'
 	},
+	mode: 'production',
+	entry: path.resolve(__dirname,'./src/js/index.js'),
+	output: {
+		path: path.resolve(__dirname, 'build/js'),
+		filename: 'bundle.js',
+		publicPath: '/build/js/'
+	},
 	module: {
 		rules: [
 			{
