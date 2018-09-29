@@ -29,22 +29,22 @@ export default {
         return {
             menu: [{
                     name: 'Início',
-                    icon_class: 'mdi mdi-home',
+                    icon_class: 'mdi mdi-home mdi-24px',
                     routeName: 'home'
                 },
                 {
                     name: 'Avaliação',
-                    icon_class: 'mdi mdi-pencil',
+                    icon_class: 'mdi mdi-pencil mdi-24px',
                     routeName: 'evaliation'
                 },
                 {
                     name: 'Cadastro',
-                    icon_class: 'mdi mdi-account-box-outline',
+                    icon_class: 'mdi mdi-account-box-outline mdi-24px',
                     routeName: 'cadastrar'
                 },
                 {
                     name: 'Login',
-                    icon_class: 'mdi mdi-account-key',
+                    icon_class: 'mdi mdi-account-key mdi-24px',
                     routeName: 'login'
                 }
             ]
