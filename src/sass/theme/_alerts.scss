@@ -1,0 +1,20 @@
+.alert{
+    padding: .45rem;
+    width: 100%;
+    margin: .45rem 0;
+    &-warning{
+        background: #d88800;
+        color: #323232;
+        & ul {
+            flex-direction: column;
+            margin: auto;
+            //max-width: 50%;
+            & li {
+                padding: .35rem 0;
+                color: white;
+                text-align: center;
+                font-size: .89rem;
+            }
+        }
+    }
+}

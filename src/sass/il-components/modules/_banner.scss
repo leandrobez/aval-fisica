@@ -1,0 +1,58 @@
+/* BANNER */
+$banner-height: 450px;
+.il-banner{
+	background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/NGC_2818_by_the_Hubble_Space_Telescope.jpg/1280px-NGC_2818_by_the_Hubble_Space_Telescope.jpg) no-repeat 50% 50%;
+  	background-size: cover;
+  	position: relative;
+  	top: 0;
+  	bottom: 0;
+  	left: 0;
+  	right: 0;
+  	width: 100%;
+  	height: $banner-height;
+  	& .il-nav--top{
+  		position: absolute;
+  		top: 0;
+  		left: 0;
+  		width: 100%;
+  		height: 3.5rem;
+		background: orange;
+		display: flex;
+		justify-content: space-around;
+		opacity: .8;
+		& div {
+			flex: auto;
+			margin: auto .15rem;
+			& ul {
+				padding: 0;
+				list-style:none;
+				display: flex;
+				justify-content: space-between;
+				margin: 0 .25rem;
+			}
+		}
+  	}
+  	& .il-banner--content{
+  		padding: 0;
+		margin: 0;
+		position: absolute;
+		top: 50%;
+		left: 0;
+		right: 0;
+		transform: translateY(-50%);
+		text-align: center;
+		display: flex;
+		justify-content: space-between;
+		& span{
+			font-size: 5rem;
+			font-weight: 500;
+			text-transform: uppercase;
+			color: white;
+			padding: 0 .45rem;
+			&.il-pronome{
+				font-size: 4rem;
+				color: #555;
+			}
+		}
+  	}
+}

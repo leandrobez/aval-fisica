@@ -1,0 +1,35 @@
+nav.il-nav {
+  padding: 0.45rem 0;
+  width: 100%;
+  height: 5rem;
+  background: #f23232;
+  & .il-nav--wrapper {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+
+    & .il-brand {
+      text-align: center;
+      & h1 {
+        font-size: 1.4rem;
+      }
+    }
+
+    & .il-nav--menu {
+      text-align: right;
+      & ul.il-menu--list {
+        display: flex;
+        justify-content: space-between;
+        & li {
+          padding: 0 .45rem;
+          line-height: 3.8rem;
+          & a.nav__menu--link{
+            color: white;
+            display: block;
+            padding: .4rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

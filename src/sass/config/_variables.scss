@@ -1,0 +1,41 @@
+/*---------------VARIABLES----------------*/
+
+/*colors*/
+$primaryColor: #444;
+$primaryAccent: rgb(85, 77, 77);
+$secondColor: #b6b5be;
+$secondColorAccent: #f5ecd0;
+$thirtyColor: #e2c043;
+$thirtyColorAccent: #fdb27c;
+$textColor: #470742;
+$textColorAccent: #c07717;
+$textColorAlt: #1b0219;
+$textColorLight: #d1e4e4;
+$textColorDark: #010f0f;
+//body
+$colorBg: #fcfcfc;
+$lines-bg: #cffffc;
+
+/*STRUCTUE*/
+$max-width: 1344px;
+
+/*footer*/
+$primary-light-blue: #8db9ed;
+$primary-line-color: #ccc;
+
+/*header*/
+$pos-top: 2rem;
+$pos-right: 2rem;
+$pos-bottom: 2rem;
+$m-w: 40px;
+$m-h: 40px;
+
+/*Other elements*/
+$back-body: rgba(darken($primaryColor, 1%), 0.6);
+$back-footer-home: darken($secondColorAccent, 20%);
+$back-header: rgba(darken(rgba(40, 55, 58, 0.7), 3%), 0.9);
+$back-portrait: rgba(40, 55, 58, 0.7);
+$back-nav: rgba(darken(rgba(40, 55, 58, 0.7), 3%), 0.7);
+
+/**Tables*/
+$cor-back-th: #c39b43;

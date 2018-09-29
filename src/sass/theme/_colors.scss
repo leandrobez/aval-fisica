@@ -1,0 +1,41 @@
+.il-color-texture{
+	&--first{
+		color: $firstColor;
+		&-opac{
+			color: lighten($firstColor,.3);
+		}
+	}
+	&--second{
+		color: $secondColor;
+		&-opac{
+			color: lighten($secondColor,.3);
+		}
+	}
+	&--third{
+		color: $thirdColor;
+		&-opac{
+			color: darken($secondColor,.3);
+		}
+	}
+}
+
+.il-color-background{
+	&--first{
+		color: $firstColor;
+		&-opac{
+			color: lighten($firstColor,.3);
+		}
+	}
+	&--second{
+		color: $secondColor;
+		&-opac{
+			color: lighten($secondColor,.3);
+		}
+	}
+	&--third{
+		color: $thirdColor;
+		&-opac{
+			color: darken($thirdColor,.3);
+		}
+	}
+}

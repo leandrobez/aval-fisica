@@ -1,0 +1,310 @@
+&.il-section--evaliation {
+  width: 100%;
+  padding: 4rem 0;
+  & .il-form--content {
+    display: flex;
+    flex-direction: column;
+
+    & .il-content--flex {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      & .il-form--input {
+        margin: 0.25rem 0.15rem;
+        height: 2rem;
+        & input[type='text'],
+        & select {
+          border: none;
+          background-color: white;
+          color: #343434;
+          height: 100%;
+          border-radius: 3px;
+          padding: 0.15rem;
+        }
+      }
+    }
+  }
+  & .il-limites {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    & .il-form--input {
+      margin: 0;
+      & span {
+        font-size: 0.78rem;
+        display: block;
+        background: white;
+        background: red;
+        margin-bottom: 0.2rem;
+        width: 100%;
+      }
+
+      & .il-limites--faixas {
+        display: flex;
+        align-content: center;
+
+        & span {
+          font-size: 0.78rem;
+          display: block;
+          text-align: center;
+        }
+        & span:nth-child(1) {
+          color: rgb(62, 173, 207);
+          background: #1a1515;
+        }
+        & span:nth-child(2) {
+          color: rgb(83, 170, 25);
+          background: #3b2d2d;
+        }
+      }
+      &.range {
+        position: relative;
+        top: 1.45rem;
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        & ul.range-labels {
+          width: 100%;
+          padding: 0.5rem 0;
+          margin: auto;
+          justify-content: space-around;
+          & li {
+            position: relative;
+            text-align: center;
+            color: #414d4f;
+            font-size: 0.85rem;
+            cursor: pointer;
+            &:before {
+              position: absolute;
+              top: -25px;
+              right: 0;
+              left: 0;
+              content: '';
+              margin: 0 auto;
+              width: 9px;
+              height: 9px;
+              background: #291717;
+              border-radius: 50%;
+            }
+            &.active {
+              color: #b9ec2b;
+              font-size: 1.5rem;
+            }
+            &.selected::before {
+              background: #ac9d1d;
+            }
+
+            &.active.selected::before {
+              display: none;
+            }
+          }
+        }
+        & span {
+          display: block;
+          text-align: center;
+          width: 100%;
+          font-weight: bolder;
+          font-size: 1.5rem;
+          color: white;
+          &.active {
+            color: #b9ec2b;
+            //font-size: 1.5rem;
+          }
+        }
+        input[type='range'] {
+          width: 100%;
+          position: relative;
+          top: 2.5rem;
+        }
+        input[type='range']::focus {
+          outline: none;
+        }
+        input[type='range']::runnable-track {
+          width: 100%;
+          height: 4.1px;
+          cursor: pointer;
+          box-shadow: 0.2px 0.2px 1.7px #a67125, 0px 0px 0.2px #bb7f2a;
+          background: rgba(217, 5, 213, 0.94);
+          border-radius: 15.5px;
+          border: 0.6px solid #2ed501;
+        }
+        input[type='range']::slider-thumb {
+          box-shadow: 2.4px 2.4px 0.9px #0daa00, 0px 0px 2.4px #0fc300;
+          border: 7.4px solid #d2f4d8;
+          height: 14px;
+          width: 20px;
+          border-radius: 20px;
+          background: rgba(88, 0, 104, 0.91);
+          cursor: pointer;
+          appearance: none;
+          margin-top: -5.55px;
+        }
+        input[type='range']:focus::slider-runnable-track {
+          background: rgba(242, 6, 237, 0.94);
+        }
+        input[type='range']::range-track {
+          width: 100%;
+          height: 4.1px;
+          cursor: pointer;
+          box-shadow: 0.2px 0.2px 1.7px #a67125, 0px 0px 0.2px #bb7f2a;
+          background: rgba(217, 5, 213, 0.94);
+          border-radius: 15.5px;
+          border: 0.6px solid #2ed501;
+        }
+        input[type='range']::range-thumb {
+          box-shadow: 2.4px 2.4px 0.9px #0daa00, 0px 0px 2.4px #0fc300;
+          border: 7.4px solid #d2f4d8;
+          height: 14px;
+          width: 20px;
+          border-radius: 20px;
+          background: rgba(88, 0, 104, 0.91);
+          cursor: pointer;
+        }
+        input[type='range']::track {
+          width: 100%;
+          height: 4.1px;
+          cursor: pointer;
+          background: transparent;
+          border-color: transparent;
+          color: transparent;
+        }
+        input[type='range']::fill-lower {
+          background: rgba(192, 4, 189, 0.94);
+          border: 0.6px solid #2ed501;
+          border-radius: 31px;
+          box-shadow: 0.2px 0.2px 1.7px #a67125, 0px 0px 0.2px #bb7f2a;
+        }
+        input[type='range']::fill-upper {
+          background: rgba(217, 5, 213, 0.94);
+          border: 0.6px solid #2ed501;
+          border-radius: 31px;
+          box-shadow: 0.2px 0.2px 1.7px #a67125, 0px 0px 0.2px #bb7f2a;
+        }
+        input[type='range']::thumb {
+          box-shadow: 2.4px 2.4px 0.9px #0daa00, 0px 0px 2.4px #0fc300;
+          border: 7.4px solid #d2f4d8;
+          height: 14px;
+          width: 20px;
+          border-radius: 20px;
+          background: rgba(88, 0, 104, 0.91);
+          cursor: pointer;
+          height: 4.1px;
+        }
+        input[type='range']:focus::fill-lower {
+          background: rgba(217, 5, 213, 0.94);
+        }
+        input[type='range']:focus::fill-upper {
+          background: rgba(242, 6, 237, 0.94);
+        }
+      }
+    }
+  }
+  & .il-dobras {
+    width: 100%;
+    position: relative;
+    top: 4rem;
+    & form {
+      padding: 0.5rem 0;
+      width: 100%;
+      margin: auto;
+      text-align: center;
+      input[type='text'],
+      input[type='email'],
+      input[type='password'],
+      input[type='fone'],
+      select,
+      textarea {
+        width: 100%;
+        margin: 0 auto;
+        height: 2rem;
+        color: #777;
+        //border: 1px solid #869696;
+      }
+    }
+    & .il-simetria--content {
+      display: flex;
+      padding: 0.45rem;
+      justify-content: center;
+      & .il-simetria--items {
+        width: 40%;
+        padding: 0 0.45rem;
+        & .il-item {
+          width: 100%;
+        }
+      }
+    }
+  }
+  @import '../../theme/table';
+  h4.il-title--result {
+    margin-top: 1rem;
+  }
+  & p.il-result--description {
+    text-align: left;
+    padding: 0.25rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+  .il-graph--painel {
+    position: relative;
+    top: 4rem;
+    width: 100%;
+    height: 400px;
+    border-left: 1px solid #434343;
+    border-bottom: 1px solid #434343;
+    padding: 0 0.45rem;
+    display: flex;
+    justify-content: center;
+    & .il-graph--item {
+      margin: 0 0.5rem;
+      position: relative;
+      flex: auto;
+      width: 100%;
+      height: 100%;
+      & .il-item--caption {
+        padding: 0.25rem 0;
+        margin-bottom: 0.45rem;
+        position: absolute;
+        width: 100%;
+        height: 2rem;
+        top: 0;
+        left: 0;
+        & span{
+          color: yellow;
+          font-size: .89rem;
+        }
+      }
+      & .il-graph {
+        position: absolute;
+        width: 20%;
+        left: 40%;
+        bottom: 0.45rem;
+        background: linear-gradient(40deg, #78aae2, #342323);
+        &:after{
+          content: '';
+          position:absolute;
+          width: 50%;
+          height: 100%;
+          right:0;
+          top:0;
+          background: linear-gradient(-40deg,#342323, #78aae2);
+        }
+      }
+      & .il-graph--result {
+        padding: 0.25rem 0;
+        margin-bottom: 0.45rem;
+        position: absolute;
+        height: 2rem;
+        bottom: -2.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        & span {
+          font-size: 0.89rem;;
+          color: blueviolet;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@mixin il-btn {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: $primaryColor;
+  color: #fff;
+  margin: auto;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: transform 0.05s;
+  border: none;
+  text-align: center;
+
+  &:hover {
+    background: darken($primaryColor, 5);
+    text-decoration: inherit;
+  }
+
+  &:active {
+    transform: scale(0.99);
+  }
+}
+@mixin il-btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}

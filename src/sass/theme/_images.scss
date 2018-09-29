@@ -1,0 +1,13 @@
+img.responsive-image{
+	display:block;
+	width: 100%;
+	&.img-circle{
+		border-radius: 50%;
+	}
+	&.img-border-2{
+		border: 2px solid $borderColor;
+	}
+	&.img-border-4{
+		border: 4px solid $borderColor;
+	}
+}
