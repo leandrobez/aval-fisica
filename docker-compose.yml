@@ -13,14 +13,12 @@ services:
     ports:
       - 8080:8080
 
-  build:
+  watch:
     image: ambientum/node:9
-    container_name: aval-fisica-vue-build
-    command: npm run build
+    container_name: aval-fisica-vue-watch
+    command: npm run watch
     volumes:
       - .:/var/www/app
-    ports:
-      - 8181:8080
 
   # Testing dist on a "real" webserver
   production-server:

@@ -4,12 +4,14 @@
   & .il-form--content {
     display: flex;
     flex-direction: column;
-
     & .il-content--flex {
       display: flex;
       flex-direction: row;
       align-content: center;
       justify-content: center;
+      @media screen and(max-width:480px) {
+        flex-direction: column;
+      }
       & .il-form--input {
         margin: 0.25rem 0.15rem;
         height: 2rem;
@@ -22,11 +24,19 @@
           border-radius: 3px;
           padding: 0.15rem;
         }
+        @media screen and(max-width:480px) {
+          select {
+            width: 250px;
+          }
+        }
       }
     }
   }
   & .il-limites {
     width: 550px;
+    @media screen and(max-width:480px) {
+      width: 300px;
+    }
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -271,9 +281,9 @@
         height: 2rem;
         top: 0;
         left: 0;
-        & span{
+        & span {
           color: yellow;
-          font-size: .89rem;
+          font-size: 0.89rem;
         }
       }
       & .il-graph {
@@ -282,14 +292,14 @@
         left: 40%;
         bottom: 0.45rem;
         background: linear-gradient(40deg, #78aae2, #342323);
-        &:after{
+        &:after {
           content: '';
-          position:absolute;
+          position: absolute;
           width: 50%;
           height: 100%;
-          right:0;
-          top:0;
-          background: linear-gradient(-40deg,#342323, #78aae2);
+          right: 0;
+          top: 0;
+          background: linear-gradient(-40deg, #342323, #78aae2);
         }
       }
       & .il-graph--result {
@@ -301,7 +311,7 @@
         left: 50%;
         transform: translateX(-50%);
         & span {
-          font-size: 0.89rem;;
+          font-size: 0.89rem;
           color: blueviolet;
         }
       }

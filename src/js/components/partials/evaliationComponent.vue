@@ -27,7 +27,7 @@
                                 id="estatura" class="form-input" />
                         </div>
                                 <div class="il-form--input">
-                                    <a href="#" title="Criar uma nova avaliação" class="il-btn" @click.prevent="submit()">Prosseguir</a>
+                                    <a href="#" title="Criar uma nova avaliação" class="il-btn il-btn--submit" @click.prevent="submit()">Prosseguir</a>
                                 </div>
                             </div>
                         </div>

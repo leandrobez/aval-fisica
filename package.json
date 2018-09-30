@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development --watch",
-    "poll": "webpack --mode development --watch-poll",
-    "build": "webpack --mode production"
+    "watch": "webpack --mode development --watch-poll"
   },
   "keywords": [],
   "author": "Leandro Bezerra",

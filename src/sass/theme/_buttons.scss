@@ -1,2 +1,14 @@
 // This file doesn't generate any css
 
+a.il-btn {
+    @include il-btn;
+    &.il-btn--small {
+      @include il-btn-small;
+    }
+    &.il-btn--submit {
+      background: red;
+    }
+    &.il-btn--reset {
+      background: green;
+    }
+  }

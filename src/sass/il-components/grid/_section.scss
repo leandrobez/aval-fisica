@@ -16,16 +16,5 @@ section.il-section {
   }
   @import '../modules/session-home';
   @import '../modules/session-evaliation';
-  a.il-btn {
-    @include il-btn;
-    &.il-btn--small {
-      @include il-btn-small;
-    }
-    &.il-btn--submit {
-      background: red;
-    }
-    &.il-btn--reset {
-      background: green;
-    }
-  }
+  
 }

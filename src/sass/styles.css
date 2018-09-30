@@ -9133,6 +9133,46 @@ h6.il-section--title {
 }
 
 /*THEMES*/
+a.il-btn {
+  display: inline-block;
+  padding: 0.35rem 1rem;
+  background: #444;
+  color: #fff;
+  margin: auto;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  -webkit-transition: -webkit-transform 0.05s;
+  transition: -webkit-transform 0.05s;
+  transition: transform 0.05s;
+  transition: transform 0.05s, -webkit-transform 0.05s;
+  border: none;
+  text-align: center;
+}
+
+a.il-btn:hover {
+  background: #373737;
+  text-decoration: inherit;
+}
+
+a.il-btn:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+a.il-btn.il-btn--small {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
+a.il-btn.il-btn--submit {
+  background: red;
+}
+
+a.il-btn.il-btn--reset {
+  background: green;
+}
+
 .alert {
   padding: .45rem;
   width: 100%;
@@ -9317,6 +9357,15 @@ section.il-section.il-section--evaliation .il-form--content .il-content--flex {
           justify-content: center;
 }
 
+@media screen and (max-width: 480px) {
+  section.il-section.il-section--evaliation .il-form--content .il-content--flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 section.il-section.il-section--evaliation .il-form--content .il-content--flex .il-form--input {
   margin: 0.25rem 0.15rem;
   height: 2rem;
@@ -9332,6 +9381,12 @@ section.il-section.il-section--evaliation .il-form--content .il-content--flex .i
   padding: 0.15rem;
 }
 
+@media screen and (max-width: 480px) {
+  section.il-section.il-section--evaliation .il-form--content .il-content--flex .il-form--input select {
+    width: 250px;
+  }
+}
+
 section.il-section.il-section--evaliation .il-limites {
   width: 550px;
   display: -webkit-box;
@@ -9342,6 +9397,12 @@ section.il-section.il-section--evaliation .il-limites {
       -ms-flex-direction: column;
           flex-direction: column;
   margin: auto;
+}
+
+@media screen and (max-width: 480px) {
+  section.il-section.il-section--evaliation .il-limites {
+    width: 300px;
+  }
 }
 
 section.il-section.il-section--evaliation .il-limites .il-form--input {
@@ -9786,7 +9847,7 @@ section.il-section.il-section--evaliation .il-graph--painel .il-graph--item .il-
 
 section.il-section.il-section--evaliation .il-graph--painel .il-graph--item .il-item--caption span {
   color: yellow;
-  font-size: .89rem;
+  font-size: 0.89rem;
 }
 
 section.il-section.il-section--evaliation .il-graph--painel .il-graph--item .il-graph {
@@ -9823,46 +9884,6 @@ section.il-section.il-section--evaliation .il-graph--painel .il-graph--item .il-
   color: blueviolet;
 }
 
-section.il-section a.il-btn {
-  display: inline-block;
-  padding: 0.35rem 1rem;
-  background: #444;
-  color: #fff;
-  margin: auto;
-  cursor: pointer;
-  text-decoration: none;
-  border-radius: 0.25rem;
-  -webkit-transition: -webkit-transform 0.05s;
-  transition: -webkit-transform 0.05s;
-  transition: transform 0.05s;
-  transition: transform 0.05s, -webkit-transform 0.05s;
-  border: none;
-  text-align: center;
-}
-
-section.il-section a.il-btn:hover {
-  background: #373737;
-  text-decoration: inherit;
-}
-
-section.il-section a.il-btn:active {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
-}
-
-section.il-section a.il-btn.il-btn--small {
-  padding: 0.5rem 1rem;
-  font-size: 0.75rem;
-}
-
-section.il-section a.il-btn.il-btn--submit {
-  background: red;
-}
-
-section.il-section a.il-btn.il-btn--reset {
-  background: green;
-}
-
 /*MODULES*/
 .il-header {
   width: 100%;
@@ -9885,10 +9906,14 @@ nav.il-nav .il-nav--wrapper {
 
 nav.il-nav .il-nav--wrapper .il-brand {
   text-align: center;
+  height: 100%;
 }
 
 nav.il-nav .il-nav--wrapper .il-brand h1 {
   font-size: 1.4rem;
+  height: 100%;
+  line-height: 2rem;
+  margin-top: 1.5rem;
 }
 
 nav.il-nav .il-nav--wrapper .il-nav--menu {
@@ -9905,14 +9930,20 @@ nav.il-nav .il-nav--wrapper .il-nav--menu ul.il-menu--list {
 }
 
 nav.il-nav .il-nav--wrapper .il-nav--menu ul.il-menu--list li {
-  padding: 0 .45rem;
+  padding: 0 0.45rem;
   line-height: 3.8rem;
 }
 
 nav.il-nav .il-nav--wrapper .il-nav--menu ul.il-menu--list li a.nav__menu--link {
-  color: white;
+  color: #e2c043;
   display: block;
-  padding: .4rem;
+  padding: 0.4rem;
   text-align: center;
+}
+
+nav.il-nav .il-nav--wrapper .il-nav--menu ul.il-menu--list li a.nav__menu--link:hover {
+  color: #d1e4e4;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 /*# sourceMappingURL=styles.css.map */

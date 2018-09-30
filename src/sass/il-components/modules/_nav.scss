@@ -6,27 +6,33 @@ nav.il-nav {
   & .il-nav--wrapper {
     display: grid;
     grid-template-columns: 300px 1fr;
-
     & .il-brand {
       text-align: center;
+      height: 100%;
       & h1 {
         font-size: 1.4rem;
+        height: 100%;
+        line-height: 2rem;
+        margin-top: 1.5rem;
       }
     }
-
     & .il-nav--menu {
       text-align: right;
       & ul.il-menu--list {
         display: flex;
         justify-content: space-between;
         & li {
-          padding: 0 .45rem;
+          padding: 0 0.45rem;
           line-height: 3.8rem;
-          & a.nav__menu--link{
-            color: white;
+          & a.nav__menu--link {
+            color: $thirtyColor;
             display: block;
-            padding: .4rem;
+            padding: 0.4rem;
             text-align: center;
+            &:hover {
+              color: $textColorLight;
+              text-decoration-line: underline;
+            }
           }
         }
       }

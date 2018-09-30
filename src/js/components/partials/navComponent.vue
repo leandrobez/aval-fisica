@@ -3,8 +3,7 @@
     <div class="il-container--wrapper">
         <div class="il-nav--wrapper">
             <div class="il-brand">
-                <h1>BoutiquePilates</h1>
-                <span>BP</span>
+                <h1 class="il-color-texture--second">BoutiquePilates</h1>
             </div>
             <div class="il-nav--menu">
                 <ul class="il-menu--list">
