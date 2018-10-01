@@ -186,7 +186,8 @@ export default {
     methods: {
         getDensidadeCorporal() {
             let dobrasCutaneas = this.params.somaDobrasCutaneas;
-            if (this.protocolo == 'seteDobras') {
+            if(this.params.sexo == 'm'){
+                if (this.protocolo == 'seteDobras') {
                 let parc1 = this.male.seteDobras.param1 - (this.male.seteDobras.param2 * dobrasCutaneas);
                 let parc2 = this.male.seteDobras.param3 * dobrasCutaneas * dobrasCutaneas;
                 let parc3 = this.male.seteDobras.param4 * this.params.idade;
@@ -197,10 +198,24 @@ export default {
                 let parc3 = this.male.tresDobras.param4 * this.params.idade;
                 return parseFloat(parc1 + parc2 - parc3).toFixed(2);
             }
+            } else {
+                if (this.protocolo == 'seteDobras') {
+                let parc1 = this.female.seteDobras.param1 - (this.female.seteDobras.param2 * dobrasCutaneas);
+                let parc2 = this.female.seteDobras.param3 * dobrasCutaneas * dobrasCutaneas;
+                let parc3 = this.female.seteDobras.param4 * this.params.idade;
+                return parseFloat(parc1 + parc2 - parc3).toFixed(2);
+            } else {
+                let parc1 = this.female.tresDobras.param1 - (this.female.tresDobras.param2 * dobrasCutaneas);
+                let parc2 = this.female.tresDobras.param3 * dobrasCutaneas * dobrasCutaneas;
+                let parc3 = this.female.tresDobras.param4 * this.params.idade;
+                return parseFloat(parc1 + parc2 - parc3).toFixed(2);
+            }
+            }
 
         },
         getConstPollack() {
             let dens = this.getDensidadeCorporal();
+            
             return parseFloat([(4.95 / dens) - 4.50] * 100).toFixed(2);
         },
         /*getDensidadeCorporal() {
@@ -393,6 +408,7 @@ export default {
         },
         evalFemale() {
             let params = featuresParams.Female;
+            console.log(params)
             this.generateFaixas(params);
             let female = pollack.female;
             this.female = female;
@@ -405,7 +421,6 @@ export default {
             this.male = male;
             this.limites = true;
         },
-
         evaliationInit() {
             let sexo = this.params.sexo;
             if (sexo == 'm') {
